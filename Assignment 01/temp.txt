@@ -1,0 +1,56 @@
+public Menus(Stage primaryStage) {
+		Stage window = primaryStage;
+	}
+	
+	// New menu item
+	static MenuItem getMenutItemNew() {
+		MenuItem New = new MenuItem();
+		//New.setOnAction(e -> {});
+		return New;
+	}
+
+	// Save menu item
+	static MenuItem getMenuItemSave() {
+		MenuItem Save = new MenuItem();
+		//Save.setOnAction(e -> {})
+		return Save;
+	}
+	
+	// Exit menu item
+	static MenuItem getMenuItemExit() {
+		MenuItem Exit = new MenuItem();
+		Exit.setOnAction(e -> {
+			// Look for alternative to exit. 
+			window.hide();
+		});
+		return Exit;
+	}
+	
+	// Credit menu item
+	static MenuItem getMenuItemCredit() {
+		MenuItem Credit = new MenuItem();
+		//Credit.setOnAction(e -> {})
+		return Credit;
+	}
+	
+	// Info menu item
+	static MenuItem getMenuItemInfo() {
+		MenuItem Info = new MenuItem();
+		//Info.setOnAction(e -> {})
+		return Info;
+	}
+	
+	// Help menu item
+	static MenuItem getMenuItemHelp() {
+		MenuItem Help = new MenuItem();
+		//New.setOnAction(e -> {})
+		return Help;
+	}
+	
+	SeparatorMenuItem separatorFile = new SeparatorMenuItem();
+	SeparatorMenuItem separatorHelp = new SeparatorMenuItem();
+	
+	Menu menuFile = new Menu();
+	Menu menuHelp = new Menu();
+	
+	MenuBar mapMenuBar = new MenuBar();

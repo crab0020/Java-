@@ -1,0 +1,15 @@
+Creating icons for menu items 
+Label on top on menu item
+
+label icon = new Label();
+icon.setIId("Help" + "-icon"); //"Help" refers to the menu item name 
+MenuItem item = new MenuItem(name, icon);
+item.setOnAction(handler);
+// eventhandler , add 
+item.setID(name);
+
+create helper function to do so
+
+to attach css reference lab 2 
+
+put resource on same level as src
